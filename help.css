@@ -1,0 +1,177 @@
+* {
+    margin: none;
+}
+
+.help {
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    font-family: Roboto Slab;
+    justify-content: center;
+    min-width: 10vh;
+    font-size: 5vh;
+    transition: all ease-out 300ms;
+}
+
+.help1 {
+    width: 400px;
+    height: fit-content;
+    background-color: #292929;
+    text-align: center;
+    border-radius: 80px;
+    border: 1px solid #292929;
+    color: #f0ad4e;
+}
+
+.help:hover {
+    color: #f0ad4e;
+    cursor: default;
+}
+
+.contentHelp {
+    background-color: #292929;
+    min-height: 70vh;
+    min-width: 60vw;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    color: wheat;
+}
+
+.formHelp {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.visible {
+    animation-name: visible;
+    animation-play-state: paused;
+    animation-duration: 600ms;
+    display: none;
+}
+
+@keyframes visible {
+    from {
+        display: none;
+        opacity: 0;
+    }
+    to {
+        display: block;
+        opacity: 1;
+    }
+}
+
+.form {
+    margin-top: 4vh;
+    text-align: left !important;
+    min-width: 40vw;
+    min-height: 45vh;
+    align-items: center;
+}
+
+#name {
+    margin-top: 20px;
+    margin-left: 80px;
+    padding: 2px;
+    padding-left: 20px;
+    width: 30vw;
+    height: 60px;
+    background-color: #a8a8a8;
+    color: black;
+    border: 2;
+    border-color: black;
+    transition: 1s;
+    font-size: 25px;
+    text-align: left;
+    border-radius: 15px;
+}
+
+input#name:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.274), 0 17px 50px 0 rgba(35, 37, 39, 0.19);
+}
+
+input#name::placeholder {
+    font-size: 20px;
+    color: black;
+    text-align: left;
+}
+
+textarea#name::placeholder {
+    font-size: 16px;
+    color: black;
+    text-align: left;
+}
+
+textarea#name:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.274), 0 17px 50px 0 rgba(35, 37, 39, 0.19);
+}
+
+.button {
+    margin-top: 60vh;
+}
+
+.help_btn {
+    color: #f0ad4e;
+    font-size: 2.4vh;
+    width: 5vw;
+    transition: all ease-out 300ms;
+    background-color: transparent;
+    border-width: 3px;
+    border-color: #ff3b3f;
+}
+
+.help_btn:hover {
+    color: antiquewhite;
+    background-color: #ff3b3f;
+}
+
+.none {
+    animation-play-state: running !important;
+    display: block !important;
+}
+
+.profile-head {
+    font-size: 3.5vh;
+    color: #caebf2;
+    font-family: Alfa Slab One;
+}
+
+.profile-entry {
+    font-size: 3.3vh;
+    color: #ff3b3f;
+    font-family: poppins;
+}
+
+.profileThings {
+    margin-top: 20px;
+}
+
+#submit {
+    margin-top: 20px;
+    margin-left: 80px;
+    padding-bottom: 10px;
+    width: 15vw;
+    height: 40px;
+    background-color: #ff3b3f;
+    color: black;
+    border: 10px;
+    border-color: black;
+    transition: 1s;
+    font-size: 25px;
+    text-align: left;
+    border-radius: 15px;
+    margin-left: 12.5vw;
+    text-align: center;
+}
+
+#submit:hover {
+    background-color: #caebf2;
+}
+
+body {
+    background-image: url('./layered-peaks-haikei.svg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
